@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>SteamDeckRefurbNotifier</Name>
+    <Repository>czerus/SDRN</Repository>
+    <Branch>
+        <Tag>stable</Tag>
+        <TagDescription>Stable releases only</TagDescription>
+    </Branch>
+    <Branch>
+        <Tag>latest</Tag>
+        <TagDescription>Latest builds (unstable)</TagDescription>
+    </Branch>
+    <Registry>https://hub.docker.com/r/cookiecodedev/rika2mqtt</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support/>
+    <Project/>
+    <Overview>This is free tool that monitors Valve's SteamDeck refurb site to check if any item is available and notify about it via Telegram bot.
+        User has to have existing bot on Telegram.
+    </Overview>
+    <Category/>
+    <WebUI/>
+    <TemplateURL/>
+    <Icon>https://upload.wikimedia.org/wikipedia/commons/7/7f/Steam_Deck_favicon.svg</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled>1693728389</DateInstalled>
+    <DonateText/>
+    <DonateLink/>
+    <Requires/>
+    <Config Name="Telegram chat ID" Target="CHAT_ID" Default="" Mode=""
+            Description="Chat ID of your telegram account. Obtain it by visiting RawDataBot" Type="Variable" Display="always" Required="true"
+            Mask="false"/>
+    <Config Name="Telegram bot access token" Target="BOT_TOKEN" Default="" Mode=""
+            Description="Telegram bot access token. Obtain it by visiting BotFather" Type="Variable" Display="always" Required="true"
+            Mask="false"/>
+    <Config Name="Check frequency" Target="FREQUENCY" Default="10" Mode=""
+            Description="How often check Valve's web page (in minutes)" Type="Variable" Display="always" Required="true"
+            Mask="false"/>
+</Container>
