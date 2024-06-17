@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>solarflow-control</Name>
+  <Repository>rbrandstaedter/solarflow-control</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/reinhard-brandstaedter/solarflow-control</Project>
+  <Overview>Solarflow Control originally was meant to automatically control Zendure's Solarflow hub with more flexibility to match home power demand and without the official mobile app. Since its first use case it has now evolved into a more sophisticated solution to also control micro-inverters (mainly via OpenDTU and AhoyDTU), read current household demand from various smartmeter readers (Hichi, Tasmota, Shelly 3EM, PowerOpti, ...) to realize optimal charging/discharging and auto-adaptive limitation based on current demand..</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://zendure.de/cdn/shop/files/520_200x.png?v=1718071724</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1718635258</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="INI_PATH" Target="/solarflow/config.ini" Default="" Mode="rw" Description="Mapping of the path to config.ini file with configuration for the solarflow-control" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
