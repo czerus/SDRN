@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>solarflow-statuspage-online</Name>
+  <Repository>rbrandstaedter/solarflow-statuspage</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/reinhard-brandstaedter/solarflow-statuspage?tab=readme-ov-file</Project>
+  <Overview>The Solarflow Statuspage is an alternative to the mobile app. It gives a quick overview of the status of the hub, providing realtime data of the output to home, the current solar power generated and the battery charging power as well as the temperature nad individual battiers connected to your hub. It also allows you manually to control the output to home and the battery charging/discahrgin limits. Additionally the statuspage can push the data it reads from Zendure's cloud service to a local MQTT broker so that you can use it for further processing (e.g. homeautomation integration).&#xD;
+This is ONLINE version that requires ZENDURE account.</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://eu.zendure.com/cdn/shop/files/zendure-infinity-energy-logo.png?v=1717494382&amp;amp;width=120</Icon>
+  <ExtraParams/>
+  <PostArgs>--online</PostArgs>
+  <CPUset/>
+  <DateInstalled>1729544516</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="ZENDURE ACCOUNT USER" Target="ZEN_USER" Default="" Mode="" Description="Name of the user for ZENDURE account" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ZENDURE ACCOUNT PASSWORD" Target="ZEN_PASSWD" Default="" Mode="" Description="Paasowrd for ZENDURE account user" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="MQTT HOST" Target="MQTT_HOST" Default="" Mode="" Description="Local mqtt host IP" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="MQTT PORT " Target="MQTT_PORT" Default="1883" Mode="" Description="Local MQTT port if different from default (1883)" Type="Variable" Display="always" Required="false" Mask="false">1883</Config>
+  <Config Name="MQTT USER" Target="MQTT_USER" Default="" Mode="" Description="MQTT user name" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="MQTT PASSWORD" Target="MQTT_PWD" Default="" Mode="" Description="MQTT user password" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="PROD_NAME" Target="PROD_NAME" Default="" Mode="" Description="If you have Hub 2000 then set this variable to value: SolarFlow Hub 2000 " Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GUI port" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+</Container>
